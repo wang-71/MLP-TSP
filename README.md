@@ -15,3 +15,36 @@ It is recommended to install dependencies in a virtual environment.
 ### Install required packages
 ```bash
 pip install torch gymnasium tqdm
+
+## Training
+
+To start training the agent, run:
+```bash
+python reinforce.py
+
+The training process applies the REINFORCE algorithm to iteratively improve the policy based on episodic rewards.
+
+## Environment
+
+The TSP environment is implemented using the Gymnasium framework.
+It defines the state representation, action space, reward function, and episode termination conditions for the TSP.
+
+## Agent 
+
+The agent consists of:
+
+A multilayer perceptron (MLP) policy network
+
+A forward method that maps environment states to action probabilities
+
+A masking vector is applied to prevent revisiting nodes
+
+## Baseline
+
+A Nearest Neighbor (NN) heuristic is implemented as a baseline to evaluate the performance of the learned policy.
+
+## Results
+
+After approximately 24 hours of training, the model was trained for ~6,800 epochs.
+Selected policy checkpoints are saved in the policies/ directory.
+
