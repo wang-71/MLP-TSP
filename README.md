@@ -15,12 +15,14 @@ It is recommended to install dependencies in a virtual environment.
 ### Install required packages
 ```bash
 pip install torch gymnasium tqdm
+```
 
 ## Training
 
 To start training the agent, run:
 ```bash
 python reinforce.py
+```
 
 The training process applies the REINFORCE algorithm to iteratively improve the policy based on episodic rewards.
 
