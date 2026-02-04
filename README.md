@@ -35,11 +35,11 @@ It defines the state representation, action space, reward function, and episode 
 
 The agent consists of:
 
-*A "multilayer perceptron (MLP) policy network"
+-A "multilayer perceptron (MLP) policy network"
 
-*A forward method that maps environment states to action probabilities
+-A forward method that maps environment states to action probabilities
 
-*A masking vector is applied to prevent revisiting nodes
+-A masking vector is applied to prevent revisiting nodes
 
 ## Baseline
 
